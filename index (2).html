@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1F2421">
+<meta name="description" content="Identidad de marca y propuesta comercial 2026 de ZentraRED.">
+<title>ZentraRED — Identidad de marca y propuesta comercial</title>
+<style>html,body{margin:0;min-height:100%;background:#F7F3EC;color:#1F2421;font-family:Arial,sans-serif}#loading{min-height:100vh;display:grid;place-items:center;text-align:center;padding:20px}#loading strong{letter-spacing:.12em;font-size:20px}#loading p{color:#3F5A4A}a{color:#3F5A4A}</style>
+</head>
+<body>
+<div id="loading" role="status"><div><strong>ZENTRARED</strong><p>Cargando presentación de identidad y presupuesto…</p></div></div>
+<script>
+fetch('./ZentraRED_Identidad_y_Presupuesto.html')
+ .then(function(response){if(!response.ok)throw new Error('HTTP '+response.status);return response.text()})
+ .then(function(html){document.open();document.write(html);document.close()})
+ .catch(function(){document.getElementById('loading').innerHTML='<div><strong>ZENTRARED</strong><p>No se pudo abrir la presentación automáticamente.</p><a href="./ZentraRED_Identidad_y_Presupuesto.html">Abrir presentación completa</a></div>'});
+</script>
+</body></html>
